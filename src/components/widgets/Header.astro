@@ -1,5 +1,10 @@
 ---
-import { IconSun, IconGithub, IconMenu, IconRSS } from "~/components/icons";
+import {
+  IconSun,
+  IconGithub,
+  IconMenu,
+  IconLinkedIn,
+} from "~/components/icons";
 import Logo from "~/components/widgets/Logo.astro";
 const {} = Astro.props;
 ---
@@ -44,29 +49,37 @@ const {} = Astro.props;
           <a
             class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
             href="#"
-            >Pages
+            >Experiences
           </a>
         </li>
         <li>
           <a
             class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
             href="#"
-            >Resources
+            >Certificates
           </a>
         </li>
         <li>
           <a
             class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
             href="/blog"
-            >Blog
+            >Projects
           </a>
         </li>
         <li class="md:hidden">
           <a
             class="font-bold hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-            href="https://github.com/onwidget/astrowind"
+            href="https://github.com/DaniKOrdo"
           >
             Github
+          </a>
+        </li>
+        <li class="md:hidden">
+          <a
+            class="font-bold hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+            href="https://www.linkedin.com/in/danielordonezgarcia/"
+          >
+            LinkedIn
           </a>
         </li>
       </ul>
@@ -83,18 +96,18 @@ const {} = Astro.props;
             <IconSun />
           </button>
           <a
-            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-            aria-label="RSS Feed"
-            href="/rss.xml"
-          >
-            <IconRSS />
-          </a>
-          <a
             href="https://github.com/onwidget/astrowind"
             class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
             aria-label="Astrowind Github"
           >
             <IconGithub />
+          </a>
+          <a
+            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+            aria-label="RSS Feed"
+            href="/rss.xml"
+          >
+            <IconLinkedIn />
           </a>
         </div>
       </div>
