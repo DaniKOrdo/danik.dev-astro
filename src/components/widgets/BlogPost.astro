@@ -10,9 +10,9 @@ const { post } = Astro.props;
       <p class="max-w-3xl mx-auto text-center">
         <time datetime={post.pubDate}>
           {
-            new Date(post.pubDate).toLocaleDateString("en-us", {
+            new Date(post.pubDate).toLocaleDateString("es-es", {
               year: "numeric",
-              month: "short",
+              month: "long",
               day: "numeric",
             })
           }
