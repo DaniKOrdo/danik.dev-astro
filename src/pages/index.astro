@@ -13,6 +13,7 @@ import StepsLeft from "~/components/widgets/StepsLeft.astro";
 import HighlightedPosts from "~/components/widgets/HighlightedPosts.astro";
 import Stats from "~/components/widgets/Stats.astro";
 import WorkExperience from "~/components/widgets/WorkExperience.astro";
+import Projects from "~/components/widgets/Projects.astro";
 
 const title = `${SITE.name} | Web Developer`;
 const description =
@@ -24,5 +25,6 @@ const canonical = new URL("", Astro.site);
   <main>
     <Hero />
     <WorkExperience />
+    <Projects />
   </main>
 </Layout>
