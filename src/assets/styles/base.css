@@ -8,6 +8,17 @@
   }
 }
 
+.contacto:hover {
+  transition: 0.3s;
+  border-bottom-width: 0px;
+  background-color: #3878df;
+}
+
+.contacto:active {
+  transition: 0.3s;
+  background-color: #2f68c4;
+}
+
 .border-fancy {
   border-radius: 37% 63% 67% 33% / 30% 33% 67% 70%;
 }

@@ -1,5 +1,8 @@
 ---
-import Picture from "~/components/core/Picture.astro";
+import AcademyBlock from "../core/AcademyBlock.astro";
+import GraduationSVG from "~/assets/images/logos/graduation.svg";
+import UdemySVG from "~/assets/images/logos/udemy.svg";
+import FccSVG from "~/assets/images/logos/fcc.svg";
 const {} = Astro.props;
 ---
 
@@ -30,21 +33,21 @@ const {} = Astro.props;
             <h2
               class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300"
             >
-              System Administrator & Web Developer
+              Administrador de Sistemas & Desarrollador Web
             </h2>
             <h3 class="mb-1 text-lg text-gray-800 dark:text-slate-500">
               SNTec
             </h3>
             <h4 class="mb-1 text-sm text-gray-800 dark:text-slate-500">
-              Oct 2021 - Sep 2022 · 12 months
+              Oct 2021 - Sep 2022 · 1 año
             </h4>
             <div class="pl-4">
-              <p>- Infrastructure maintenance</p>
-              <p>- Server management</p>
-              <p>- Backup, users and files</p>
-              <p>- Development with PHP, JavaScript and SQL</p>
-              <p>- Apache server management</p>
-              <p>- WordPress and PrestaShop</p>
+              <p>- Mantenimiento de infraestructuras</p>
+              <p>- Gestión de servidores</p>
+              <p>- Backup, gestión de archivos y usuarios</p>
+              <p>- Desarrollo con PHP, JavaScript y SQL</p>
+              <p>- Gestión del servidor Apache</p>
+              <p>- WordPress y PrestaShop</p>
             </div>
           </div>
         </div>
@@ -69,11 +72,11 @@ const {} = Astro.props;
               Windnova Systems S.L
             </h3>
             <h4 class="mb-1 text-sm text-gray-800 dark:text-slate-500">
-              Mar 2021 - Jun 2021 · 4 months
+              Mar 2021 - Jun 2021 · 4 meses
             </h4>
             <div class="pl-4">
-              <p>Internship contract in which I performed and learned:</p>
-              <p>- Programming PHP, JavaScript y SQL</p>
+              <p>Contrato de prácticas en el que he realizado y aprendido:</p>
+              <p>- Programación PHP, JavaScript y SQL</p>
               <p>- Jira Software</p>
               <p>- MySQL Workbench</p>
               <p>- Docker</p>
@@ -84,7 +87,7 @@ const {} = Astro.props;
       </div>
     </div>
 
-    <div class="relative flex flex-row">
+    <div class="flex flex-row">
       <div
         class="w-px h-full bg-gray-300 dark:bg-slate-500 md:block hidden md:mr-6"
       >
@@ -95,73 +98,49 @@ const {} = Astro.props;
         >
           Formación
         </h1>
-        <div class="flex">
-          <div class="flex flex-col items-center mr-4 mt-1">
-            <div>
-              <div
-                class="flex items-center justify-center w-7 h-7 rounded-full border-blue-300 border-2"
-              >
-              </div>
-            </div>
-            <div class="w-px h-full bg-gray-300 dark:bg-slate-500"></div>
-          </div>
-          <div class="flex">
-            <div class="pt-1 pb-8">
-              <h2
-                class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300"
-              >
-                System Administrator & Web Developer
-              </h2>
-              <h3 class="mb-1 text-lg text-gray-800 dark:text-slate-500">
-                SNTec
-              </h3>
-              <h4 class="mb-1 text-sm text-gray-800 dark:text-slate-500">
-                Oct 2021 - Sep 2022 · 12 months
-              </h4>
-              <div class="pl-4">
-                <p>- Infrastructure maintenance</p>
-                <p>- Server management</p>
-                <p>- Backup, users and files</p>
-                <p>- Development with PHP, JavaScript and SQL</p>
-                <p>- Apache server management</p>
-                <p>- WordPress and PrestaShop</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="flex flex-col items-center mr-4 mt-1">
-            <div>
-              <div
-                class="flex items-center justify-center w-7 h-7 rounded-full border-blue-300 border-2"
-              >
-              </div>
-            </div>
-          </div>
-          <div class="flex">
-            <div class="pt-1 pb-8">
-              <h2
-                class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300"
-              >
-                Frontend Developer
-              </h2>
-              <h3 class="mb-1 text-lg text-gray-800 dark:text-slate-500">
-                Windnova Systems S.L
-              </h3>
-              <h4 class="mb-1 text-sm text-gray-800 dark:text-slate-500">
-                Mar 2021 - Jun 2021 · 4 months
-              </h4>
-              <div class="pl-4">
-                <p>Internship contract in which I performed and learned:</p>
-                <p>- Programming PHP, JavaScript y SQL</p>
-                <p>- Jira Software</p>
-                <p>- MySQL Workbench</p>
-                <p>- Docker</p>
-                <p>- Git Flow</p>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <AcademyBlock
+          logo={GraduationSVG}
+          title={"Desarrollo de Aplicaciones Web"}
+          location={"Es Liceu"}
+          date={"2021 - Actual"}
+        />
+        <AcademyBlock
+          logo={GraduationSVG}
+          title={"Administración de Sistemas Informáticos en Red"}
+          location={"San José Obrero"}
+          date={"2019 - 2021"}
+        />
+
+        <h2
+          class="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-8 mt-3"
+        >
+          Certificaciones
+        </h2>
+        <AcademyBlock
+          logo={UdemySVG}
+          title={"Bootstrap 4 Ultimate Guide 2022"}
+          location={"Udemy"}
+          date={"2022"}
+        />
+        <AcademyBlock
+          logo={UdemySVG}
+          title={"Modern JavaScript for React JS - ES6"}
+          location={"Udemy"}
+          date={"2022"}
+        />
+        <AcademyBlock
+          logo={FccSVG}
+          title={"JavaScript Algorithms and Data Structures"}
+          location={"freeCodeCamp"}
+          date={"2022"}
+        />
+        <AcademyBlock
+          logo={FccSVG}
+          title={"Responsive Web Design"}
+          location={"freeCodeCamp"}
+          date={"2022"}
+        />
       </div>
     </div>
   </div>
