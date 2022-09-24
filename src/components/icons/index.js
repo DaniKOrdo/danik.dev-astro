@@ -7,6 +7,7 @@ import IconArrowDownRight from "./IconArrowDownRight.astro";
 import IconRSS from "./IconRSS.astro";
 import IconDK from "./IconDK.astro";
 import IconLinkedIn from "./IconLinkedIn.astro";
+import IconMail from "./IconMail.astro";
 
 export {
   IconSun,
@@ -18,4 +19,5 @@ export {
   IconRSS,
   IconDK,
   IconLinkedIn,
+  IconMail,
 };
