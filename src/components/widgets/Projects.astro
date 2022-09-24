@@ -27,7 +27,7 @@ const {} = Astro.props;
       <div class="flex flex-col max-w-md">
         <Picture
           src={import("~/assets/images/proyecto1.png")}
-          class=""
+          class="pointer-events-none select-none"
           widths={[420, 208]}
           sizes=" (max-width: 400px) 400, 400px"
           alt="My face"
@@ -43,12 +43,11 @@ const {} = Astro.props;
         </div>
         <p class="my-4">
           Con este proyecto he conseguido tener un riego automático mediante
-          arduino y raspberry, gracias a sensores y bombas de agua.
-          Complementando el proyecto con una interfaz con estadisticas y un
-          panel de control. Todo esto con un diseño responsive y minimalista.
+          arduino y raspberry, gracias a sensores y bombas de agua. panel de
+          control. Todo esto con un diseño responsive y minimalista.
         </p>
         <ButtonsProjects
-          hrefView={"/proyectos/garduino"}
+          opacityView="opacity-50 cursor-default"
           hrefCode={"https://danik.dev/"}
           hrefInfo={"https://danik.dev/"}
         />
@@ -61,7 +60,7 @@ const {} = Astro.props;
       <div class="flex flex-col max-w-md">
         <Picture
           src={import("~/assets/images/proyecto1.png")}
-          class=""
+          class="pointer-events-none select-none"
           widths={[420, 208]}
           sizes=" (max-width: 400px) 400, 400px"
           alt="My face"
