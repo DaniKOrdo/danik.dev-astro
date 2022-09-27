@@ -1,5 +1,10 @@
 ---
-import { IconJS, IconTailwind, IconArduino, IconPHP } from "~/components/icons";
+import {
+  IconJS,
+  IconTailwind,
+  IconArduino,
+  IconAstro,
+} from "~/components/icons";
 import ProyectoPlantilla from "~/assets/images/plantilla-proyecto.png";
 import Picture from "~/components/core/Picture.astro";
 import ButtonsProjects from "../core/ButtonsProjects.astro";
@@ -29,7 +34,7 @@ const {} = Astro.props;
           class="pointer-events-none select-none"
           widths={[420, 208]}
           sizes=" (max-width: 400px) 400, 400px"
-          alt="My face"
+          alt="Garduino"
           aspectRatio="18:9"
         />
         <h2 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
@@ -47,7 +52,7 @@ const {} = Astro.props;
         </p>
         <ButtonsProjects
           opacityView="opacity-50 cursor-default"
-          hrefCode={"https://danik.dev/"}
+          hrefCode={"https://github.com/DaniKOrdo/AutoGarduino"}
           hrefInfo={"/proyectos/garduino"}
         />
       </div>
@@ -62,27 +67,26 @@ const {} = Astro.props;
           class="pointer-events-none select-none"
           widths={[420, 208]}
           sizes=" (max-width: 400px) 400, 400px"
-          alt="My face"
+          alt="Portfolio"
           aspectRatio="18:9"
         />
         <h2 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
-          Garduino
+          Portfolio
         </h2>
         <div class="flex flex-row max-w-md gap-3">
-          <IconJS />
-          <IconArduino />
+          <IconAstro />
           <IconTailwind />
         </div>
         <p class="my-4">
-          Con este proyecto he conseguido tener un riego automático mediante
-          arduino y raspberry, gracias a sensores y bombas de agua.
-          Complementando el proyecto con una interfaz con estadisticas y un
-          panel de control. Todo esto con un diseño responsive y minimalista.
+          Este es mi portfolio, la página que estás viendo ahora mismo. He
+          querido hacerlo simple y minimalista, con un diseño responsive, con un
+          buen SEO y performance. Para ello he utilizado el framework Astro y el
+          preprocesador TailwindCSS.
         </p>
         <ButtonsProjects
           hrefView={"https://danik.dev/"}
-          hrefCode={"https://danik.dev/"}
-          hrefInfo={"https://danik.dev/"}
+          hrefCode={"https://github.com/DaniKOrdo/danik.dev-astro"}
+          hrefInfo={"/proyectos/portfolio"}
         />
       </div>
     </div>

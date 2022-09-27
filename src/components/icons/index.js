@@ -11,6 +11,7 @@ import IconJS from "./IconJS.astro";
 import IconTailwind from "./IconTailwind.astro";
 import IconArduino from "./IconArduino.astro";
 import IconPHP from "./IconPHP.astro";
+import IconAstro from "./IconAstro.astro";
 
 export {
   IconSun,
@@ -26,4 +27,5 @@ export {
   IconTailwind,
   IconArduino,
   IconPHP,
+  IconAstro,
 };
