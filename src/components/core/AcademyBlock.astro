@@ -3,8 +3,8 @@ const { logo, title, location, date } = Astro.props;
 ---
 
 <div class="flex flex-row mb-4">
-  <div class="relative h-[80px] min-w-[80px] bg-slate-300 rounded-lg">
-    <div class="absolute mx-2.5 my-2.5">
+  <div class="relative h-[75px] min-w-[75px] bg-slate-300 rounded-lg">
+    <div class="absolute mx-2.5 my-2.5 pointer-events-none select-none">
       <img src={logo} alt={title} />
     </div>
   </div>

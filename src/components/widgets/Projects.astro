@@ -7,6 +7,7 @@ import {
   IconAstroDark,
 } from "~/components/icons";
 import ProyectoPlantilla from "~/assets/images/plantilla-proyecto.png";
+import ProyectoPortfolio from "~/assets/images/portfolio.png";
 import Picture from "~/components/core/Picture.astro";
 import ButtonsProjects from "../core/ButtonsProjects.astro";
 const {} = Astro.props;
@@ -47,14 +48,15 @@ const {} = Astro.props;
           <IconTailwind />
         </div>
         <p class="my-4">
-          Con este proyecto he conseguido tener un riego automático mediante
-          arduino y raspberry, gracias a sensores y bombas de agua. panel de
-          control. Todo esto con un diseño responsive y minimalista.
+          Con este proyecto quiero tener un riego automático mediante arduino y
+          raspberry, gracias a sensores y bombas de agua. Un panel de control a
+          tiempo real con datos y estadísticas de cada planta.
         </p>
         <ButtonsProjects
           opacityView="opacity-50 cursor-default"
           hrefCode={"https://github.com/DaniKOrdo/AutoGarduino"}
           hrefInfo={"/proyectos/garduino"}
+          opacityInfo="opacity-50 cursor-default"
         />
       </div>
     </div>
@@ -64,7 +66,7 @@ const {} = Astro.props;
     >
       <div class="flex flex-col max-w-md">
         <Picture
-          src={ProyectoPlantilla}
+          src={ProyectoPortfolio}
           class="pointer-events-none select-none"
           widths={[420, 208]}
           sizes=" (max-width: 400px) 400, 400px"
@@ -89,6 +91,7 @@ const {} = Astro.props;
           hrefView={"https://danik.dev/"}
           hrefCode={"https://github.com/DaniKOrdo/danik.dev-astro"}
           hrefInfo={"/proyectos/portfolio"}
+          opacityInfo="opacity-50 cursor-default"
         />
       </div>
     </div>
