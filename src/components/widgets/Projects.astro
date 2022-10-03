@@ -4,6 +4,7 @@ import {
   IconTailwind,
   IconArduino,
   IconAstro,
+  IconAstroDark,
 } from "~/components/icons";
 import ProyectoPlantilla from "~/assets/images/plantilla-proyecto.png";
 import Picture from "~/components/core/Picture.astro";
@@ -74,7 +75,8 @@ const {} = Astro.props;
           Portfolio
         </h2>
         <div class="flex flex-row max-w-md gap-3">
-          <IconAstro />
+          <div class="hidden dark:block"><IconAstro /></div>
+          <div class="dark:hidden"><IconAstroDark /></div>
           <IconTailwind />
         </div>
         <p class="my-4">
