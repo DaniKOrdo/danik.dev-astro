@@ -8,6 +8,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .contacto:hover {
   transition: 0.3s;
   border-bottom-width: 0px;
