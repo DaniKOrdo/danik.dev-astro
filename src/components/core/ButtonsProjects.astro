@@ -1,6 +1,13 @@
 ---
-const { hrefView, hrefCode, hrefInfo, opacityView, opacityCode, opacityInfo } =
-  Astro.props;
+const {
+  hrefView,
+  hrefCode,
+  hrefInfo,
+  opacityView,
+  opacityCode,
+  opacityInfo,
+  target: target = "_blank",
+} = Astro.props;
 ---
 
 <div
@@ -8,7 +15,7 @@ const { hrefView, hrefCode, hrefInfo, opacityView, opacityCode, opacityInfo } =
 >
   <a
     href={hrefView}
-    target="_blank"
+    target={target}
     rel="noreferrer"
     title="Ir al sitio"
     class={opacityView}
