@@ -1,32 +1,25 @@
-# 🚀 AstroWind
+# 🍵 Mi portfolio
 
-<img src="lighthouse-score.png" align="right"
-     alt="AstroWind Lighthouse Score" width="100" height="358">
+He creado mi portfolio con **Astro + Tailwind CSS** para así practicar mis habilidades con un framework y un preprocesador de CSS. 
 
-**AstroWind** is a free and open-source template to make your website using **Astro + Tailwind CSS**. Ready to start a new project and designed taking into account best practices.
+## Características
 
-## Features
-
-- ✅ Integration with **Tailwind CSS** ([@astrojs/tailwind](https://docs.astro.build/en/guides/integrations-guide/tailwind/)).
-- ✅ Supports **Dark mode**.
-- ✅ **Fast and SEO friendly blog** with automatic **RSS feed** ([@astrojs/rss](https://docs.astro.build/en/guides/rss/)).
-- ✅ **Image optimization** ([@astrojs/images](https://docs.astro.build/en/guides/integrations-guide/image/)).
-- ✅ Generation of **project sitemap** based on your routes ([@astrojs/sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/)).
-- ✅ **Open Graph tags** for social media sharing
-- ✅ **Fonts optimization** at build time ([subfont](https://www.npmjs.com/package/subfont)).
-- ✅ **Production-ready** scores in [Lighthouse](https://web.dev/measure/) and [PageSpeed Insights](https://pagespeed.web.dev/) reports
+- ✅ Integración con **Tailwind CSS** ([@astrojs/tailwind](https://docs.astro.build/en/guides/integrations-guide/tailwind/)).
+- ✅ Soporta **modo oscuro**.
+- ✅ **Optimización de imágenes** ([@astrojs/images](https://docs.astro.build/en/guides/integrations-guide/image/)).
+- ✅ Generación del **sitemap del los proyectos** basado en las rutas ([@astrojs/sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/)).
+- ✅ **Optimización de fuentes** en tiempo de la built ([subfont](https://www.npmjs.com/package/subfont)).
+- ✅ **Accesibilidad y rendimiento**, puntuación en [Lighthouse](https://web.dev/measure/) y en [PageSpeed Insights](https://pagespeed.web.dev/)
 
 <br>
 
-<img src="./screenshot.png" alt="AstroWind Theme Screenshot">
+<img src="./src/assets/images/default.png" alt="Portada">
 
-[Live demo](https://astrowind.vercel.app/) 
+[Live demo](https://danik.dev/) 
 
 <br>
 
-## Project Structure
-
-Inside AstroWind template, you'll see the following folders and files:
+## Estructura de carpetas
 
 ```
 /
@@ -53,101 +46,45 @@ Inside AstroWind template, you'll see the following folders and files:
 │   |   |── BaseLayout.astro
 │   |   └── ...
 │   ├── pages/
-│   |   ├── blog/
+│   |   ├── proyectos/
 |   |   |   ├── [...page].astro
 |   |   |   └── [slug].astro
 │   |   ├── index.astro
-|   |   ├── 404.astro
-|   |   └-- rss.xml.js
+|   |   └── 404.astro
 │   ├── utils/
 │   └── config.mjs
 ├── package.json
 └── ...
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Comandos
 
-Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
+Todos los comandos se ejecutan desde la raíz del proyecto, desde la terminal:
 
-[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-<br>
-
-## Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command           | Action                                       |
+| Comandos          | Acción                                       |
 | :---------------- | :------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
+| `npm install`     | Instala las dependencias                     |
+| `npm run dev`     | Inicia el local dev server `localhost:3000`  |
+| `npm run build`   | Hace la built de producción `./dist/`        |
+| `npm run preview` | Preview de la build en local                 |
+
 
 <br>
 
-## Deploy
+## Roadmap v1.2
 
-### Deploy to production (manual)
-
-You can create an optimized production build with:
-
-```shell
-npm run build
-```
-
-Now, your website is ready to be deployed. All generated files are located at
-`dist` folder, which you can deploy the folder to any hosting service you
-prefer.
-
-### Deploy to Netlify
-
-Clone this repository on own GitHub account and deploy to Netlify:
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/astrowind)
-
-### Deploy to Vercel
-
-Clone this repository on own GitHub account and deploy to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fastrowind)
-
-<br>
-
-## Roadmap v1.0
-
-- *Project*:
-  - **(DONE)** Reduce the complexity in the components folder and simplify the other folders to make it very easy to use.
-  - Create simple and clear strategy to get template updates
-  - Move specific configurations to a specialized file
-  - Fix some bugs with prettier
-  - Make the use of images clean and intuitive
+- *Portfolio*:
+  - Añadir lenguajes y tecnologías conocidas
+  - Añadir sección de mini proyectos
 - *SEO*:
-  - **(DONE)** Add support to easily manage SEO meta-tags (title, description, canonical, social sharing, ...)
-- *Blog*:
-  - **(DONE)** Support to Fast and SEO friendly blog
-  - Improve blog design
-  - Add support for categories and tags.
-  - Create component or utilities for latest posts
-  - Create component or utilities for related posts
-  - Add more *shortcodes* or *embed* functions to posts in Markdown: (eg video, tweet...)
-- *More widgets*:
-  - ~~Add more Tailwind components useful for most scenarios (Features, Contact, Call to Actions, Content, FAQs ...)~~
-  - Create external library or place with useful Tailwind components
-- *More Examples*: Add commonly used example pages (Ex: About, Terms, Services...)
-- *Documentation*: Create detailed documentation with best practices and redesign tips
-
-<br>
-
-## Contributing
-
-If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request. 
-That would be very useful for all of us and we would be happy to listen and take action.
-
-## License
-
-**AstroWind** is licensed under the MIT license — see the [LICENSE](https://github.com/onwidget/astrowind/blob/main/LICENSE) file for details.
+  - Mejorar la optimización de imágenes
+  - Añadir metadatos
+  - Mejorar la accesibilidad
+- *Proyectos*:
+  - Terminar los proyectos pendientes
+  - Añadir más proyectos
+- *Extra*:
+  - Mejorar la documentación
+  - Añadir tests
+  - Promocionar el portfolio
