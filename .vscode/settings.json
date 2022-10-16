@@ -9,5 +9,8 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.language": "en,es-ES"
+  "cSpell.language": "en,es-ES",
+  "cSpell.enableFiletypes": [
+    "!javascript"
+  ]
 }
