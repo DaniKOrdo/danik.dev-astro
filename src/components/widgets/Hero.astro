@@ -20,8 +20,7 @@ const {} = Astro.props;
           >DaniK
         </span>
         <p class="text-2xl md:text-3xl mt-2">
-          Un Desarrollador Web en constante aprendizaje, apasionado por la
-          tecnología y la programación.
+          Un Frontend Developer apasionado por la tecnología y la programación.
         </p>
         <p class="text-xl md:text-2xl mt-2">
           Siempre estoy aprendiendo nuevas tecnologías y buscando nuevas formas
@@ -95,10 +94,10 @@ const {} = Astro.props;
       <!--  border-radius: 30% 70% 67% 33% / 30% 30% 70% 70%  -->
       <div class="col-span-2 md:col-span-1 content-center my-4 md:my-0">
         <Picture
-          src={import("~/assets/images/my-face.png")}
-          class="mx-auto border-fancy shadow-lg bg-gray-400 dark:bg-slate-700 pointer-events-none select-none"
-          widths={[400, 400]}
-          sizes=" (max-width: 400px) 400, 400px"
+          src={import("~/assets/images/foto-perfil.png")}
+          class="mx-auto border-fancy shadow-lg bg-gray-400 dark:bg-slate-700 pointer-events-none select-none md:max-w-[400px]"
+          widths={[800, 800]}
+          sizes=" (max-width: 800px) 800, 800px"
           alt="My face"
           aspectRatio="1:1"
           loading="auto"
