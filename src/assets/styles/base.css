@@ -41,6 +41,11 @@ html {
   margin-top: 1rem;
 }
 
+.buttons-projects a:hover{
+  background: #2c2c2c;
+  transform: scale(1.05);
+}
+
 @keyframes pulsate {
   0% {
     transform: scale(0.6, 0.6);
