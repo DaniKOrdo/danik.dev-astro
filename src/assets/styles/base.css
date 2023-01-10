@@ -46,6 +46,11 @@ html {
   transform: scale(1.05);
 }
 
+.resetHover:hover{
+  background: #0d0d0d !important;
+  transform: scale(1) !important;
+}
+
 @keyframes pulsate {
   0% {
     transform: scale(0.6, 0.6);
