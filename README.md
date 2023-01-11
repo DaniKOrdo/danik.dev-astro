@@ -1,6 +1,6 @@
 # 🍵 Mi portfolio
 
-He creado mi portfolio con **Astro + Tailwind CSS** para así practicar mis habilidades con un framework y un preprocesador de CSS. 
+He creado mi portfolio con **Astro + Tailwind CSS** para practicar mis habilidades con un framework y un preprocesador de CSS. 
 
 ## Características
 
@@ -72,19 +72,6 @@ Todos los comandos se ejecutan desde la raíz del proyecto, desde la terminal:
 
 <br>
 
-## Roadmap v1.2
+## Extra
 
-- *Portfolio*:
-  - Añadir lenguajes y tecnologías conocidas
-  - Añadir sección de mini proyectos
-- *SEO*:
-  - Mejorar la optimización de imágenes
-  - Añadir metadatos
-  - Mejorar la accesibilidad
-- *Proyectos*:
-  - Terminar los proyectos pendientes
-  - Añadir más proyectos
-- *Extra*:
-  - Mejorar la documentación
-  - Añadir tests
-  - Promocionar el portfolio
+Se agradecen comentarios, sugerencias o cualquier cosa para mejorar -> hola@danik.dev
