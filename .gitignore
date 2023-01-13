@@ -22,4 +22,4 @@ pnpm-debug.log*
 # extra
 package-lock.json
 deploy.js
-.vscode
+**/.vscode/
