@@ -1,4 +1,6 @@
+import DarkLightIcon from "./DarkLightIcon.astro";
 import IconSun from "./IconSun.astro";
+import IconMoon from "./IconMoon.astro";
 import IconGithub from "./IconGithub.astro";
 import IconTwitter from "./IconTwitter.astro";
 import IconArrowRight from "./IconArrowRight.astro";
@@ -15,7 +17,9 @@ import IconAstro from "./IconAstro.astro";
 import IconAstroDark from "./IconAstroDark.astro";
 
 export {
+  DarkLightIcon,
   IconSun,
+  IconMoon,
   IconGithub,
   IconTwitter,
   IconArrowRight,

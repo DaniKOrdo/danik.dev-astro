@@ -1,0 +1,11 @@
+---
+import { IconSun, IconMoon } from "~/components/icons";
+const {
+  class: className = "w-5 h-5",
+  dark = "hidden dark:block",
+  light = "dark:hidden",
+} = Astro.props;
+---
+
+<IconMoon class={`${className} ${dark}`} />
+<IconSun class={`${className} ${light}`} />
