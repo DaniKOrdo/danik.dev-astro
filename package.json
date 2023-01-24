@@ -1,8 +1,7 @@
 {
-  "name": "@onwidget/danik-portfolio",
-  "description": "My personal portfolio Astrowind template",
+  "name": "danik.dev",
+  "description": "🚀 Astro + Tailwind Portfolio",
   "version": "1.0.4",
-  "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
