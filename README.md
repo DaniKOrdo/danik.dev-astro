@@ -1,6 +1,7 @@
 # 🍵 Mi portfolio
 
 He creado mi portfolio con **Astro + Tailwind CSS** para practicar mis habilidades con un framework y un preprocesador de CSS. 
+[Link a mi Portfolio](https://danik.dev/) 
 
 ## Características
 
