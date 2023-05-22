@@ -8,8 +8,10 @@ import {
 } from "~/components/icons";
 import ProyectoPlantilla from "~/assets/images/plantilla-proyecto.png";
 import ProyectoPortfolio from "~/assets/images/proyecto-portfolio.png";
+import ProyectoTabgha from "~/assets/images/tabgha.png";
 import Picture from "~/components/core/Picture.astro";
 import ButtonsProjects from "../core/ButtonsProjects.astro";
+import Contentful from "../icons/Contentful.astro";
 const {} = Astro.props;
 ---
 
@@ -34,7 +36,7 @@ const {} = Astro.props;
     >
       <div class="flex flex-col max-w-md">
         <Picture
-          src={ProyectoPlantilla}
+          src={ProyectoTabgha}
           class="pointer-events-none select-none"
           widths={[1000, 500]}
           sizes=" (max-width: 420px) 1000, 500px"
@@ -42,25 +44,27 @@ const {} = Astro.props;
           aspectRatio="18:9"
         />
         <h2 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
-          Garduino
+          Tabgha | Chiringuito Solidario
         </h2>
         <div class="flex flex-row max-w-md gap-3">
-          <IconJS />
-          <IconArduino />
+          <div class="hidden dark:block"><IconAstro /></div>
+          <div class="dark:hidden"><IconAstroDark /></div>
           <IconTailwind />
+          <IconJS />
+          <Contentful />
         </div>
         <p class="my-4">
-          Con este proyecto quiero tener un riego automático de plantas con un
-          Arduino y una Raspberry, gracias a sensores y bombas de agua. También
-          un panel de control con datos de humedad, nivel de agua y estadísticas
-          de cada planta.
+          Página web creada con Astro y TailwindCSS para el Chiringuito
+          Solidario de Portals Nous. Mi objetivo era crear un sitio
+          multi-idioma, con diseño responsive, buen SEO y performance. También
+          he implementado una sección de noticias dinámica, con un CMS para que
+          puedan actualizarla fácilmente.
         </p>
         <ButtonsProjects
-          hrefView="#Próximamente"
-          target="_self"
-          opacityView="opacity-50 cursor-default resetHover"
-          hrefCode={"https://github.com/DaniKOrdo/Garduino"}
-          hrefInfo={"./proyectos/garduino"}
+          hrefView="https://www.tabgha.es/"
+          target="_blank"
+          opacityCode="opacity-50 cursor-default resetHover"
+          opacityInfo="opacity-50 cursor-default resetHover"
         />
       </div>
     </div>
