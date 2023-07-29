@@ -105,7 +105,9 @@ const {} = Astro.props;
         <!-- <div
           class="atropos border-fancy md:max-w-[400px]"
         > -->
-        <div class="my-atropos mx-auto border-fancy md:max-w-[400px]">
+        <div
+          class="my-atropos mx-auto border-fancy md:max-w-[400px] select-none touch-none touch-pan-y"
+        >
           <div class="atropos">
             <div class="atropos-scale">
               <div class="atropos-rotate">
@@ -139,7 +141,7 @@ const {} = Astro.props;
     activeOffset: 40,
     shadowScale: 1.1,
     shadow: false,
-    highlight: true,
+    highlight: false,
     onEnter() {
       // console.log("Enter");
     },
