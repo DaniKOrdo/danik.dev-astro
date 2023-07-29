@@ -93,7 +93,7 @@ const {} = Astro.props;
       <!-- Imagen Derecha  rounded-md shadow-lg bg-gray-400 dark:bg-slate-700 -->
       <!--  border-radius: 30% 70% 67% 33% / 30% 30% 70% 70%  -->
       <div class="col-span-2 md:col-span-1 content-center my-4 md:my-0">
-        <Picture
+        <!-- <Picture
           src={import("~/assets/images/foto-perfil.png")}
           class="mx-auto border-fancy shadow-lg bg-gray-400 dark:bg-slate-700 pointer-events-none select-none md:max-w-[400px]"
           widths={[800, 800]}
@@ -101,8 +101,65 @@ const {} = Astro.props;
           alt="My face"
           aspectRatio="1:1"
           loading="auto"
-        />
+        /> -->
+        <!-- <div
+          class="atropos border-fancy md:max-w-[400px]"
+        > -->
+        <div class="my-atropos mx-auto border-fancy md:max-w-[400px]">
+          <div class="atropos">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <img
+                    class=""
+                    src="/images/foto-perfil-fondo.png"
+                    data-atropos-offset="-5"
+                  />
+                  <img
+                    class="layer"
+                    src="/images/foto-perfil-cara.png"
+                    data-atropos-offset="0"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  import Atropos from "atropos";
+  import "atropos/css";
+
+  const myAtropos = Atropos({
+    el: ".my-atropos",
+    activeOffset: 40,
+    shadowScale: 1.1,
+    shadow: false,
+    highlight: true,
+    onEnter() {
+      // console.log("Enter");
+    },
+    onLeave() {
+      // console.log("Leave");
+    },
+    onRotate(x, y) {
+      // console.log("Rotate", x, y);
+    },
+  });
+</script>
+
+<style>
+  .my-atropos {
+    position: relative;
+  }
+
+  .layer {
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+</style>
