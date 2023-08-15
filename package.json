@@ -13,18 +13,25 @@
   },
   "devDependencies": {
     "@astrojs/image": "^0.3.3",
+    "@astrojs/react": "^2.2.2",
     "@astrojs/rss": "^1.0.0",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^1.0.0",
     "@tailwindcss/typography": "^0.5.4",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
     "astro": "^1.0.0",
     "ftp-deploy": "^2.4.3",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "reading-time": "^1.5.0",
     "subfont": "^6.9.0"
   },
   "dependencies": {
-    "atropos": "^2.0.2"
+    "@formkit/auto-animate": "^0.7.0",
+    "atropos": "^2.0.2",
+    "canvas-confetti": "^1.6.0"
   }
 }
