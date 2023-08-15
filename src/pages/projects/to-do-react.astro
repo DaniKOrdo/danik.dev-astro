@@ -1,0 +1,13 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import { SITE } from "~/config.mjs";
+import App from "./to-do-react/App.jsx";
+
+const title = `To-Do React | ${SITE.name}`;
+const description = "Proyecto To-Do en React con TailwindCSS";
+const canonical = new URL("", Astro.site);
+---
+
+<Layout meta={{ title, description, canonical }}>
+  <App client:load />
+</Layout>
