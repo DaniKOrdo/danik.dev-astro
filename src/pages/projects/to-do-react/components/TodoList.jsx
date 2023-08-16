@@ -10,7 +10,7 @@ function TodoList({ todoList, handleCheck, handleDelete }) {
         <li
           id={id}
           key={id}
-          className={`flex items-center justify-between p-4 my-2 bg-gray- rounded hover:bg-gray-700 bg-gray-800 transition-colors duration-300 ${
+          className={`flex items-center justify-between p-4 my-2 rounded hover:bg-slate-200 bg-slate-300 dark:hover:bg-gray-700 dark:bg-gray-800 transition-colors duration-300 ${
             done ? "line-through text-gray-400" : ""
           }
           }`}
