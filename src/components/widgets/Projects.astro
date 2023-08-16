@@ -32,17 +32,22 @@ const {} = Astro.props;
   </div>
   <div class="grid mx-auto gap-4 space-y-6 md:grid-cols-2 md:space-y-0">
     <div
-      class="space-y-8 sm:px-8 flex justify-center p-6 bg-blue-50 dark:bg-slate-800 rounded"
+      class="space-y-8 sm:px-8 flex justify-center p-6 bg-blue-100 dark:bg-slate-800 rounded-xl"
     >
       <div class="flex flex-col max-w-md">
-        <Picture
-          src={ProyectoPlantilla}
-          class="pointer-events-none select-none"
-          widths={[1000, 500]}
-          sizes=" (max-width: 420px) 1000, 500px"
-          alt="Portfolio"
-          aspectRatio="18:9"
-        />
+        <a
+          href="/projects/to-do-react"
+          class="hover:scale-105 duration-150 hover:contrast-[1.1]"
+        >
+          <Picture
+            src={ProyectoPlantilla}
+            class="pointer-events-none select-none"
+            widths={[1000, 500]}
+            sizes=" (max-width: 420px) 1000, 500px"
+            alt="To-Do React"
+            aspectRatio="18:9"
+          />
+        </a>
         <h2 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
           To-Do React
         </h2>
@@ -67,17 +72,23 @@ const {} = Astro.props;
     </div>
 
     <div
-      class="space-y-8 sm:px-8 flex justify-center p-6 bg-blue-50 dark:bg-slate-800 rounded"
+      class="space-y-8 sm:px-8 flex justify-center p-6 bg-blue-100 dark:bg-slate-800 rounded-xl"
     >
       <div class="flex flex-col max-w-md">
-        <Picture
-          src={ProyectoTabgha}
-          class="pointer-events-none select-none"
-          widths={[1000, 500]}
-          sizes=" (max-width: 420px) 1000, 500px"
-          alt="Tabgha Chiringuito Solidario"
-          aspectRatio="18:9"
-        />
+        <a
+          href="https://www.tabgha.es/"
+          target="_blank"
+          class="hover:scale-105 duration-150 hover:contrast-[1.1]"
+        >
+          <Picture
+            src={ProyectoTabgha}
+            class="pointer-events-none select-none"
+            widths={[1000, 500]}
+            sizes=" (max-width: 420px) 1000, 500px"
+            alt="Tabgha Chiringuito Solidario"
+            aspectRatio="18:9"
+          />
+        </a>
         <h2 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
           Tabgha | Chiringuito Solidario
         </h2>
@@ -105,17 +116,22 @@ const {} = Astro.props;
     </div>
 
     <div
-      class="space-y-8 sm:px-8 flex justify-center p-6 bg-blue-50 dark:bg-slate-800 rounded"
+      class="space-y-8 sm:px-8 flex justify-center p-6 bg-blue-100 dark:bg-slate-800 rounded-xl"
     >
       <div class="flex flex-col max-w-md">
-        <Picture
-          src={ProyectoPortfolio}
-          class="pointer-events-none select-none"
-          widths={[1000, 500]}
-          sizes=" (max-width: 420px) 1000, 500px"
-          alt="Portfolio"
-          aspectRatio="18:9"
-        />
+        <a
+          href="https://danik.dev/"
+          class="hover:scale-105 duration-150 hover:contrast-[1.1]"
+        >
+          <Picture
+            src={ProyectoPortfolio}
+            class="pointer-events-none select-none"
+            widths={[1000, 500]}
+            sizes=" (max-width: 420px) 1000, 500px"
+            alt="Portfolio"
+            aspectRatio="18:9"
+          />
+        </a>
         <h2 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
           Portfolio
         </h2>
