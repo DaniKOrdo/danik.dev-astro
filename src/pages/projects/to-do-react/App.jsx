@@ -3,6 +3,7 @@ import confetti from 'canvas-confetti'
 import TodoList from "./components/TodoList";
 import FormTodo from "./components/FormTodo";
 import DateBar from "./components/DateBar";
+import checkSound from "~/assets/sounds/success.mp3";
 
 import "./index.css";
 
@@ -42,9 +43,7 @@ function App() {
     setTodoList(newTodoList);
 
     if (newTodoList.find((todo) => todo.id === id)?.done) {
-      const audio = new Audio(
-        "/src/pages/projects/to-do-react/sounds/success.mp3"
-      );
+      const audio = new Audio(checkSound);
       audio.play();
 
       if (newTodoList.every((todo) => todo.done)) {
@@ -63,7 +62,7 @@ function App() {
   }, [todoList]);
 
   return (
-      <div className="container flex flex-col items-center mx-auto text-2xl max-w-screen-md px-4 my-2 md:my-20">
+      <div className="container flex flex-col items-center mx-auto text-xl md:text-2xl max-w-screen-md px-4 my-2 md:my-20">
         <DateBar />
         <TodoList
           todoList={todoList}
