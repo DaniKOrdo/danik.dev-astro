@@ -1,5 +1,5 @@
 ---
-const { class: className = "w-5 h-5" } = Astro.props;
+const { class: className } = Astro.props;
 ---
 
 <svg
@@ -7,8 +7,9 @@ const { class: className = "w-5 h-5" } = Astro.props;
   height="32px"
   viewBox="0 0 24 24"
   xmlns="http://www.w3.org/2000/svg"
+  class={className}
 >
-  <title>JavaScript Logo</title>
+  <title>JavaScript</title>
   <g fill="none" fill-rule="evenodd">
     <rect width="24" height="24" fill="#F1DC50"></rect>
     <path

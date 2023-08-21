@@ -1,5 +1,5 @@
 ---
-const { class: className = "w-5 h-5" } = Astro.props;
+const { class: className } = Astro.props;
 ---
 
 <svg
@@ -7,8 +7,9 @@ const { class: className = "w-5 h-5" } = Astro.props;
   viewBox="-11.5 -10.23174 23 20.46348"
   width="32px"
   height="32px"
+  class={className}
 >
-  <title>React Logo</title>
+  <title>React</title>
   <circle cx="0" cy="0" r="2.05" fill="#61dafb"></circle>
   <g stroke="#61dafb" stroke-width="1" fill="none">
     <ellipse rx="11" ry="4.2"></ellipse>
