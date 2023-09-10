@@ -5,9 +5,11 @@ import {
   IconAstro,
   IconAstroDark,
   IconReact,
+  IconNext,
 } from "~/components/icons";
 import ProyectoPlantilla from "~/assets/images/plantilla-proyecto.png";
-import ProyectorToDoReact from "~/assets/images/todo-react.png";
+import ProyectoWeatherNextApp from "~/assets/images/weather-next-app.png";
+import ProyectoToDoReact from "~/assets/images/todo-react.png";
 import ProyectoPortfolio from "~/assets/images/proyecto-portfolio.png";
 import ProyectoTabgha from "~/assets/images/tabgha.png";
 import Picture from "~/components/core/Picture.astro";
@@ -37,11 +39,53 @@ const {} = Astro.props;
     >
       <div class="flex flex-col max-w-md">
         <a
+          href="https://weather-next-app.danik.dev/"
+          class="hover:scale-105 duration-150 hover:contrast-[1.1]"
+        >
+          <Picture
+            src={ProyectoWeatherNextApp}
+            class="pointer-events-none select-none"
+            widths={[1000, 500]}
+            sizes=" (max-width: 420px) 1000, 500px"
+            alt="Weather App"
+            aspectRatio="18:9"
+          />
+        </a>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
+          Weather Next App
+        </h2>
+        <div class="flex flex-row max-w-md gap-3">
+          <div class="hidden dark:block"><IconNext fill="#fff" /></div>
+          <div class="dark:hidden"><IconNext /></div>
+          <!-- <IconNext /> -->
+          <IconReact />
+          <IconTailwind />
+        </div>
+        <p class="my-4">
+          Aplicación del tiempo creada con NextJS y TailwindCSS. Usa la API de
+          WeatherAPI en RapidAPI para obtener los datos del tiempo y la API de
+          Unsplash para obtener la imagen de fondo de la ciudad.
+        </p>
+        <ButtonsProjects
+          hrefView={"https://weather-next-app.danik.dev/"}
+          target="_blank"
+          hrefCode={"https://github.com/DaniKOrdo/weather-next-app"}
+          hrefInfo="#Próximamente"
+          opacityInfo="opacity-50 cursor-default resetHover"
+        />
+      </div>
+    </div>
+
+    <div
+      class="space-y-8 sm:px-8 flex justify-center p-6 bg-blue-100 dark:bg-slate-800 rounded-xl"
+    >
+      <div class="flex flex-col max-w-md">
+        <a
           href="/projects/to-do-react"
           class="hover:scale-105 duration-150 hover:contrast-[1.1]"
         >
           <Picture
-            src={ProyectorToDoReact}
+            src={ProyectoToDoReact}
             class="pointer-events-none select-none"
             widths={[1000, 500]}
             sizes=" (max-width: 420px) 1000, 500px"
