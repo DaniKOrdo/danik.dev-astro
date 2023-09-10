@@ -16,6 +16,7 @@ import IconPHP from "./IconPHP.astro";
 import IconAstro from "./IconAstro.astro";
 import IconAstroDark from "./IconAstroDark.astro";
 import IconReact from "./IconReact.astro";
+import IconNext from "./IconNext.astro";
 
 export {
   DarkLightIcon,
@@ -36,4 +37,5 @@ export {
   IconAstro,
   IconAstroDark,
   IconReact,
+  IconNext,
 };
