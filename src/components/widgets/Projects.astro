@@ -6,6 +6,7 @@ import {
   IconAstroDark,
   IconReact,
   IconNext,
+  IconVite,
 } from "~/components/icons";
 import ProyectoPlantilla from "~/assets/images/plantilla-proyecto.png";
 import ProyectoWeatherNextApp from "~/assets/images/weather-next-app.png";
@@ -39,6 +40,47 @@ const {} = Astro.props;
     >
       <div class="flex flex-col max-w-md">
         <a
+          href="https://pirineos.danik.dev/"
+          class="hover:scale-105 duration-150 hover:contrast-[1.1]"
+          target="_blank"
+        >
+          <Picture
+            src={ProyectoWeatherNextApp}
+            class="pointer-events-none select-none"
+            widths={[1000, 500]}
+            sizes=" (max-width: 420px) 1000, 500px"
+            alt="Pirineos Parallax"
+            aspectRatio="18:9"
+          />
+        </a>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
+          Pirineos Parallax
+        </h2>
+        <div class="flex flex-row max-w-md gap-3">
+          <IconReact />
+          <IconVite />
+          <IconTailwind />
+        </div>
+        <p class="my-4">
+          Galería de imágenes de los Pirineos con efecto parallax al pasar el
+          ratón sobre ellas. Creada con React, Vite, TailwindCSS y con el
+          paquete de Atropos para el efecto parallax.
+        </p>
+        <ButtonsProjects
+          hrefView={"https://pirineos.danik.dev/"}
+          target="_blank"
+          hrefCode={"https://github.com/DaniKOrdo/pirineos-parallax"}
+          hrefInfo="#Próximamente"
+          opacityInfo="opacity-50 cursor-default resetHover"
+        />
+      </div>
+    </article>
+
+    <article
+      class="space-y-8 sm:px-8 flex justify-center p-6 bg-blue-100 dark:bg-slate-800 rounded-xl"
+    >
+      <div class="flex flex-col max-w-md">
+        <a
           href="https://weather-next-app.danik.dev/"
           class="hover:scale-105 duration-150 hover:contrast-[1.1]"
           target="_blank"
@@ -56,10 +98,9 @@ const {} = Astro.props;
           Weather Next App
         </h2>
         <div class="flex flex-row max-w-md gap-3">
+          <IconReact />
           <div class="hidden dark:block"><IconNext fill="#fff" /></div>
           <div class="dark:hidden"><IconNext /></div>
-          <!-- <IconNext /> -->
-          <IconReact />
           <IconTailwind />
         </div>
         <p class="my-4">
