@@ -17,6 +17,7 @@ import IconAstro from "./IconAstro.astro";
 import IconAstroDark from "./IconAstroDark.astro";
 import IconReact from "./IconReact.astro";
 import IconNext from "./IconNext.astro";
+import IconVite from "./IconVite.astro";
 
 export {
   DarkLightIcon,
@@ -38,4 +39,5 @@ export {
   IconAstroDark,
   IconReact,
   IconNext,
+  IconVite,
 };
