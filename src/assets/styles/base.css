@@ -42,13 +42,8 @@ html {
 }
 
 .buttons-projects a:hover{
-  background: #2c2c2c;
-  transform: scale(1.05);
-}
-
-.resetHover:hover{
-  background: #0d0d0d !important;
-  transform: scale(1) !important;
+  background: #334463;
+  transform: scale(1.1);
 }
 
 @keyframes pulsate {
@@ -76,26 +71,26 @@ html {
 
 .pulse-base {
   position: absolute;
-  height: 50px;
-  width: 50px;
-  border: 15px solid transparent;
-  border-radius: 50%;
+  height: 3.15rem;
+  width: 3.15rem;
+  border: 0.95rem solid transparent;
+  border-radius: 100%;
   margin: 0 auto;
 }
 
 .pulse-base:before {
   content: '';
-  border: 15px solid #e7f6ff;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  border: 0.85rem solid #e7f6ff;
+  border-radius: 100%;
+  height: 2.5rem;
+  width: 2.5rem;
   position: absolute;
-  left: -15px;
-  bottom: -15px;
-  animation: pulsate 3s ease-out;
+  left: -0.6rem;
+  bottom: 0.07rem;
+  animation: pulsate 2.5s ease-out;
   animation-iteration-count: infinite;
   opacity: 0;
-  z-index: 99;
+  z-index: 30;
 }
 
 /*.pulse-base {
