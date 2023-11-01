@@ -9,6 +9,7 @@ import {
   IconVite,
 } from "~/components/icons";
 import ProyectoPlantilla from "~/assets/images/plantilla-proyecto.png";
+import ProyectoProductPage from "~/assets/images/product-page.png";
 import ProyectoPirineos from "~/assets/images/pirineos.png";
 import ProyectoWeatherNextApp from "~/assets/images/weather-next-app.png";
 import ProyectoToDoReact from "~/assets/images/todo-react.png";
@@ -24,11 +25,11 @@ const {} = Astro.props;
   <div
     class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 px-6"
   >
-    <h1
+    <h2
       class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4"
     >
       Proyectos
-    </h1>
+    </h2>
     <p
       class="max-w-3xl mx-auto sm:text-center text-xl text-gray-600 dark:text-slate-400"
     >
@@ -36,6 +37,48 @@ const {} = Astro.props;
     </p>
   </div>
   <div class="grid mx-auto gap-4 space-y-6 md:grid-cols-2 md:space-y-0">
+    <article
+      class="space-y-8 sm:px-8 flex justify-center p-6 bg-blue-100 dark:bg-slate-800 rounded-xl"
+    >
+      <div class="flex flex-col max-w-md">
+        <a
+          href="https://pirineos.danik.dev/"
+          class="hover:scale-105 duration-150 hover:contrast-[1.1]"
+          target="_blank"
+        >
+          <Picture
+            src={ProyectoProductPage}
+            class="pointer-events-none select-none"
+            widths={[1000, 500]}
+            sizes=" (max-width: 420px) 1000, 500px"
+            alt="Pirineos Parallax"
+            aspectRatio="18:9"
+          />
+        </a>
+        <h3 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
+          E-Commerce Product Page
+        </h3>
+        <div class="flex flex-row max-w-md gap-3">
+          <IconReact />
+          <IconVite />
+          <IconTailwind />
+        </div>
+        <p class="my-4">
+          Producto e-commerce creado con React, Vite y Tailwind, para el
+          challenge de Frontend Mentor. Utilizando useContext para el estado
+          global del carrito, detalles como la modal/carrusel de imágenes, el
+          contador de productos y el precio total del carrito.
+        </p>
+        <ButtonsProjects
+          hrefView={"https://product-page.danik.dev/"}
+          target="_blank"
+          hrefCode={"https://github.com/DaniKOrdo/frontendmentor/tree/main/E-Commerce-Product-Page"}
+          hrefInfo="#Próximamente"
+          opacityInfo="opacity-50 cursor-default"
+        />
+      </div>
+    </article>
+
     <article
       class="space-y-8 sm:px-8 flex justify-center p-6 bg-blue-100 dark:bg-slate-800 rounded-xl"
     >
@@ -54,9 +97,9 @@ const {} = Astro.props;
             aspectRatio="18:9"
           />
         </a>
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
+        <h3 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
           Pirineos Parallax
-        </h2>
+        </h3>
         <div class="flex flex-row max-w-md gap-3">
           <IconReact />
           <IconVite />
@@ -64,15 +107,15 @@ const {} = Astro.props;
         </div>
         <p class="my-4">
           Galería de imágenes de los Pirineos con efecto parallax al pasar el
-          ratón sobre ellas. Creada con React, Vite, TailwindCSS y con el
-          paquete de Atropos para el efecto parallax.
+          ratón sobre ellas. Creada con React, Vite, Tailwind y con el paquete
+          de Atropos para el efecto parallax.
         </p>
         <ButtonsProjects
           hrefView={"https://pirineos.danik.dev/"}
           target="_blank"
           hrefCode={"https://github.com/DaniKOrdo/pirineos-parallax"}
           hrefInfo="#Próximamente"
-          opacityInfo="opacity-50 cursor-default resetHover"
+          opacityInfo="opacity-50 cursor-default"
         />
       </div>
     </article>
@@ -95,9 +138,9 @@ const {} = Astro.props;
             aspectRatio="18:9"
           />
         </a>
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
+        <h3 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
           Weather Next App
-        </h2>
+        </h3>
         <div class="flex flex-row max-w-md gap-3">
           <IconReact />
           <div class="hidden dark:block"><IconNext fill="#fff" /></div>
@@ -105,7 +148,7 @@ const {} = Astro.props;
           <IconTailwind />
         </div>
         <p class="my-4">
-          Aplicación del tiempo creada con NextJS y TailwindCSS. Usa la API de
+          Aplicación del tiempo creada con NextJS y Tailwind. Usa la API de
           WeatherAPI en RapidAPI para obtener los datos del tiempo y la API de
           Unsplash para obtener la imagen de fondo de la ciudad.
         </p>
@@ -114,7 +157,7 @@ const {} = Astro.props;
           target="_blank"
           hrefCode={"https://github.com/DaniKOrdo/weather-next-app"}
           hrefInfo="#Próximamente"
-          opacityInfo="opacity-50 cursor-default resetHover"
+          opacityInfo="opacity-50 cursor-default"
         />
       </div>
     </article>
@@ -136,15 +179,15 @@ const {} = Astro.props;
             aspectRatio="18:9"
           />
         </a>
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
+        <h3 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
           To-Do React
-        </h2>
+        </h3>
         <div class="flex flex-row max-w-md gap-3">
           <IconReact />
           <IconTailwind />
         </div>
         <p class="my-4">
-          Pequeña aplicación de tareas creada con React y TailwindCSS. Usa el
+          Pequeña aplicación de tareas creada con React y Tailwind. Usa el
           LocalStorage para guardar las tareas y el estado de la aplicación.
           Tiene pequeños detalles como la fecha actual, animaciones y confetti
           al completar todas las tareas.
@@ -154,7 +197,7 @@ const {} = Astro.props;
           target="_self"
           hrefCode={"https://github.com/DaniKOrdo/danik.dev-astro/tree/master/src/pages/projects/to-do-react"}
           hrefInfo="#Próximamente"
-          opacityInfo="opacity-50 cursor-default resetHover"
+          opacityInfo="opacity-50 cursor-default"
         />
       </div>
     </article>
@@ -177,9 +220,9 @@ const {} = Astro.props;
             aspectRatio="18:9"
           />
         </a>
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
+        <h3 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
           Tabgha | Chiringuito Solidario
-        </h2>
+        </h3>
         <div class="flex flex-row max-w-md gap-3">
           <div class="hidden dark:block"><IconAstro /></div>
           <div class="dark:hidden"><IconAstroDark /></div>
@@ -188,17 +231,17 @@ const {} = Astro.props;
           <Contentful />
         </div>
         <p class="my-4">
-          Página web creada con Astro y TailwindCSS para el Chiringuito
-          Solidario de Portals Nous. Mi objetivo era crear un sitio
-          multi-idioma, con diseño responsive, buen SEO y performance. También
-          he implementado una sección de noticias dinámica, con un headless CMS
-          para que puedan actualizarla fácilmente.
+          Página web creada con Astro y Tailwind para el Chiringuito Solidario
+          de Portals Nous. Mi objetivo era crear un sitio multi-idioma, con
+          diseño responsive, buen SEO y performance. También he implementado una
+          sección de noticias dinámica, con un headless CMS para que puedan
+          actualizarla fácilmente.
         </p>
         <ButtonsProjects
           hrefView="https://www.tabgha.es/"
           target="_blank"
-          opacityCode="opacity-50 cursor-default resetHover"
-          opacityInfo="opacity-50 cursor-default resetHover"
+          opacityCode="opacity-50 cursor-default"
+          opacityInfo="opacity-50 cursor-default"
         />
       </div>
     </article>
@@ -220,9 +263,9 @@ const {} = Astro.props;
             aspectRatio="18:9"
           />
         </a>
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
+        <h3 class="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
           Portfolio
-        </h2>
+        </h3>
         <div class="flex flex-row max-w-md gap-3">
           <div class="hidden dark:block"><IconAstro /></div>
           <div class="dark:hidden"><IconAstroDark /></div>
@@ -232,14 +275,14 @@ const {} = Astro.props;
           Este es mi portfolio, la página que estás viendo ahora mismo. He
           querido hacerlo simple y minimalista, con un diseño responsive, con un
           buen SEO y performance. Para ello he utilizado el framework Astro y el
-          preprocesador TailwindCSS.
+          preprocesador Tailwind.
         </p>
         <ButtonsProjects
           hrefView={"https://danik.dev/"}
           target="_self"
           hrefCode={"https://github.com/DaniKOrdo/danik.dev-astro"}
           hrefInfo="#Próximamente"
-          opacityInfo="opacity-50 cursor-default resetHover"
+          opacityInfo="opacity-50 cursor-default"
         />
       </div>
     </article>
