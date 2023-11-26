@@ -28,21 +28,23 @@ html {
 }
 
 .buttons-projects a{
-  font-size: 30px;
-  color: white;
-  border-radius: 50%;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  border-radius: 2rem;
   background: #0f172a;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  transition: all 0.3s ease-out;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.2s ease-out;
   transform: none;
   margin-top: 1rem;
+  gap: 0.5rem;
 }
 
 .buttons-projects a:hover{
-  background: #334463;
+  background: #3d5075;
   transform: scale(1.1);
 }
 
